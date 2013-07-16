@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Hubert Editor" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release-Windows">
+				<Option platforms="Windows;" />
+				<Option output="bin\Release\Hubert Editor.exe" prefix_auto="1" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj\Release\" />
+				<Option type="5" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-O2" />
+					<Add option="-w" />
+					<Add option="-DGAME_OS_WINDOWS" />
+					<Add directory="..\..\..\MinGW\include" />
+					<Add directory="..\..\..\SDL\include\SDL" />
+					<Add directory="..\..\..\SDL\SDL_image\include" />
+					<Add directory="..\..\..\SDL\SDL_mixer\include" />
+					<Add directory="..\..\..\glew\include\GL" />
+					<Add directory="..\..\..\Boost" />
+					<Add directory="..\..\..\zlib\include" />
+					<Add directory="..\..\..\libpng\include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lmingw32" />
+					<Add option="-lSDLmain" />
+					<Add option="-lSDL" />
+					<Add option="-mwindows" />
+					<Add option="-Wl,--stack,536870912" />
+					<Add library="..\..\..\SDL\lib\libSDL.dll.a" />
+					<Add library="..\..\..\SDL\lib\libSDLmain.a" />
+					<Add library="..\..\..\glew\lib\glew32s.lib" />
+					<Add library="..\..\..\MinGW\lib\libopengl32.a" />
+					<Add library="..\..\..\MinGW\lib\libglu32.a" />
+					<Add library="..\..\..\SDL\SDL_image\lib\SDL_image.lib" />
+					<Add library="..\..\..\SDL\SDL_mixer\lib\SDL_mixer.lib" />
+					<Add library="..\..\..\Boost\stage\lib\libboost_system-mgw46-mt-1_49.a" />
+					<Add library="..\..\..\Boost\stage\lib\libboost_filesystem-mgw46-mt-1_49.a" />
+					<Add library="..\..\..\libpng\lib\libpng.a" />
+					<Add directory="..\..\..\SDL\lib" />
+					<Add directory="..\..\..\glew\lib" />
+					<Add directory="..\..\..\Boost\stage\lib" />
+					<Add directory="..\..\..\libpng\lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="MersenneTwister.h" />
+		<Unit filename="background_layer.cpp" />
+		<Unit filename="background_layer.h" />
+		<Unit filename="booster.cpp" />
+		<Unit filename="booster.h" />
+		<Unit filename="brush.cpp" />
+		<Unit filename="brush.h" />
+		<Unit filename="brush_create_stuff.cpp" />
+		<Unit filename="collision.cpp" />
+		<Unit filename="collision.h" />
+		<Unit filename="door.cpp" />
+		<Unit filename="door.h" />
+		<Unit filename="enumerations.h" />
+		<Unit filename="font.cpp" />
+		<Unit filename="font.h" />
+		<Unit filename="height_masks.cpp" />
+		<Unit filename="height_masks.h" />
+		<Unit filename="item.cpp" />
+		<Unit filename="item.h" />
+		<Unit filename="item_dimensions.h" />
+		<Unit filename="level.cpp" />
+		<Unit filename="level.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="main.h" />
+		<Unit filename="moving_platform.cpp" />
+		<Unit filename="moving_platform.h" />
+		<Unit filename="moving_platform_waypoint.h" />
+		<Unit filename="npc.cpp" />
+		<Unit filename="npc.h" />
+		<Unit filename="npc_dimensions.h" />
+		<Unit filename="pixels.cpp" />
+		<Unit filename="pixels.h" />
+		<Unit filename="quit.cpp" />
+		<Unit filename="quit.h" />
+		<Unit filename="random_number_generator.cpp" />
+		<Unit filename="random_number_generator.h" />
+		<Unit filename="render.cpp" />
+		<Unit filename="render.h" />
+		<Unit filename="sign.cpp" />
+		<Unit filename="sign.h" />
+		<Unit filename="spring.cpp" />
+		<Unit filename="spring.h" />
+		<Unit filename="sprite_selection_dialog.cpp" />
+		<Unit filename="sprite_selection_dialog.h" />
+		<Unit filename="tile.cpp" />
+		<Unit filename="tile.h" />
+		<Unit filename="tile_background.cpp" />
+		<Unit filename="tile_background.h" />
+		<Unit filename="tile_sprites.h" />
+		<Unit filename="timer.cpp" />
+		<Unit filename="timer.h" />
+		<Unit filename="trap.cpp" />
+		<Unit filename="trap.h" />
+		<Unit filename="trap_dimensions.h" />
+		<Unit filename="trigger.cpp" />
+		<Unit filename="trigger.h" />
+		<Unit filename="update.cpp" />
+		<Unit filename="update.h" />
+		<Unit filename="version.h" />
+		<Unit filename="window.cpp" />
+		<Unit filename="window.h" />
+		<Unit filename="world.cpp" />
+		<Unit filename="world.h" />
+		<Extensions>
+			<AutoVersioning>
+				<Scheme minor_max="10" build_max="0" rev_max="0" rev_rand_max="10" build_times_to_increment_minor="100" />
+				<Settings autoincrement="1" date_declarations="1" update_manifest="1" do_auto_increment="0" ask_to_increment="0" language="C++" svn="0" svn_directory="" header_path="version.h" />
+				<Changes_Log show_changes_editor="0" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
+				<Code header_guard="VERSION_H" namespace="AutoVersion" prefix="" />
+			</AutoVersioning>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

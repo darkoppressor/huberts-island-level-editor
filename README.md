@@ -1,5 +1,6 @@
 # huberts-island-level-editor
 Source release for Hubert's Island Adventure: Mouse o' War level editor
+http://cheeseandbacon.org/hubert/
 
 This is the (very gross) level editor that I use for Hubert's Island. Abandon all hope, ye who enter here.
 
